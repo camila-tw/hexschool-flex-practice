@@ -47,11 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-* {
-	background: #fff;
-	/* outline: 1px solid #000; */
-}
-
 body {
 	font-family: 'Noto Sans', sans-serif;
 }
@@ -120,12 +115,8 @@ body {
 	font-size: 20px;
 }
 
-.menu li:nth-child(1) {
-  border-bottom: 5px solid #00c897; 
-}
-
 .menu li a:hover {
-	background: blue;
+	border-bottom: 5px solid #00c897; 
 }
 
 .bannerContainer {
@@ -147,11 +138,31 @@ body {
 }
 
 .footer {
-  background: gray;
-  color: #fff;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	padding: 20px;
+}
+
+.footer img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.footer .contactInfo {
+	display: flex;
+	flex-direction: column;
+}
+
+.contactInfo p {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.contactInfo span {
+	color: #e5558c;
 }
 
 .courses {
