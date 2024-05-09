@@ -46,19 +46,93 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+* {
+	background: #fff
+	/* outline: 1px solid #000; */
+}
+
 .wrap {
   margin: 0 auto;
-  width: 1024px;
   display: flex;
   flex-direction: column;
-  padding: 10px 10px;
 }
 
 .header {
   margin-bottom: 30px;
-  width: 550px;
-  margin: 0 auto;
-  border: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	
+}
+
+.social {
+	display: flex;
+	background: #f6f6f6;
+	justify-content: flex-end;
+}
+
+.social li {
+	display: flex;
+	align-items: center;
+	margin: 10px 10px;
+	background: #f6f6f6;
+}
+
+.social li a {
+	text-decoration: none;
+	background: #f6f6f6;
+}
+
+.navBar {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu li {
+	
+	margin-right: 10px;
+	width: 70px;
+	text-align: center;
+}
+
+.menu li a {
+	color: #00d5a0;
+	display: block;
+	text-decoration: none;
+	line-height: 30px;
+}
+
+.menu li:first-child a {
+    border-bottom: 3px solid #00c897; 
+}
+
+.menu li a:hover {
+	background: blue;
+}
+
+.bannerContainer {
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+	position: relative;
+}
+
+.bannerContainer .title {
+		position: absolute; 
+		width: 100%;
+    color: white;
+    font-size: 35px; 
+		background: rgba(0, 0, 0, 0.3); 
+		line-height: 65px;
+		padding: 20px;
 }
 
 .content {
@@ -80,7 +154,7 @@ table {
 }
 
 .course-item {
-/*   border: 1px solid #000; */
+  /* border: 1px solid #000; */
   box-shadow:0 0 2px #B2B2B0;
   width: 300px;
 }
