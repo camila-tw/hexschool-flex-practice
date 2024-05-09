@@ -146,10 +146,6 @@ body {
 	padding: 20px;
 }
 
-.content {
-  margin-bottom: 20px;
-}
-
 .footer {
   background: gray;
   color: #fff;
@@ -159,18 +155,30 @@ body {
 }
 
 .courses {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .course-item {
-  /* border: 1px solid #000; */
-  box-shadow:0 0 2px #B2B2B0;
-  width: 300px;
+	display: flex;
+	flex-direction: column; 
+	justify-content: space-around;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 350px;
 }
 
 .course-item h2 {
   text-align: center;
   font-size: 25px;
+	margin: 10px;
+}
+
+.course-info {
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 300;
+	text-align: justify;
+	margin: 20px 20px;
 }
